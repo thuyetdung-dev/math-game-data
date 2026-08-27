@@ -3,7 +3,7 @@ import google.generativeai as genai
 
 # QUAN TRỌNG: Dán API Key của anh vào đây
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-genai.configure(api_key=API_KEY)
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 st.set_page_config(page_title="MathGame Creator", page_icon="🎲")
 st.title("🎲 Trợ Lý Tạo Game Toán Học THPT")
